@@ -1,12 +1,12 @@
 pipeline {
     agent {
         docker {
-            image 'node:12-alpine'
+            image 'node:14-alpine'
             args '-p 3000:3000'
         }
     }
     environment { 
-        CI = 'true'
+        CI = 'false'
     }
     stages {
         stage('Build') {
@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'npm test'
+                sh 'npm test --no-watch'
             }
         }
     }
