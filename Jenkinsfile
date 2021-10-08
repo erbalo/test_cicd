@@ -12,7 +12,7 @@ pipeline {
     agent {
         docker {
             image 'node:12-alpine'
-            args '-p 3000:3000 -u root --privileged'
+            args '-p 3000 -u root --privileged'
         }
     }
 
@@ -84,6 +84,7 @@ pipeline {
                         echo "Preview URL ${previewURL}"
                     }catch (Exception e) {
                         echo "Error extracting URL ${e}"
+                        githubNotify context: 'CI', description: 'Error al genear preview...',  status: 'FAILURE'
                     }
                 }
             }
