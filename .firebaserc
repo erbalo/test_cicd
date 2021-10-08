@@ -1,0 +1,10 @@
+{
+  "projects": {
+    "default": "test-cicd-d5c86"
+  },
+  "targets": {
+    "test-cicd-d5c86": {
+      "hosting": {}
+    }
+  }
+}
