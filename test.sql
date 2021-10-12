@@ -8,6 +8,3 @@ create table engine(
 );-- comentario
 
 -- otro comentarios
-
--- nueva cosa
--- en el nuevo
