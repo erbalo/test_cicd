@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React - Ay mama me esta doliendo otro commit
+          Siempre me arrepenti
         </a>
       </header>
     </div>
