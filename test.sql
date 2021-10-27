@@ -1,3 +1,5 @@
+-- comments
+
 create database prices_engine;
 
 use prices_engine;
